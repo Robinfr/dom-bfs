@@ -1,0 +1,42 @@
+{
+  "name": "dom-bfs",
+  "version": "0.0.1",
+  "description": "Allows you to do a breadth-first-search through DOM nodes",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.1",
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.10.0",
+    "typescript": "^2.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged"
+  },
+  "lint-staged":{
+    "*.ts": [
+      "prettier -c ./prettierrc",
+      "tslint --fix",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/Robin_f/dom-bfs.git"
+  },
+  "keywords": [
+    "bfs",
+    "breadth-first-search",
+    "dom",
+    "search"
+  ],
+  "author": "Robin Franken",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Robin_f/dom-bfs/issues"
+  },
+  "homepage": "https://gitlab.com/Robin_f/dom-bfs#README"
+}
