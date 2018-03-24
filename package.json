@@ -2,7 +2,7 @@
     "name": "dom-bfs",
     "version": "0.0.1",
     "description": "Allows you to do a breadth-first-search through DOM elements.",
-    "main": "index.js",
+    "main": "./lib/index.js",
     "dependencies": {},
     "devDependencies": {
         "@types/chai": "^4.1.2",
@@ -22,6 +22,7 @@
     "scripts": {
         "test": "mocha -r ts-node/register src/**/*.spec.ts",
         "test:watch": "npm run test -- --watch --watch-extensions ts",
+        "prepublish": "npm run build",
         "precommit": "lint-staged",
         "build": "tsc"
     },
