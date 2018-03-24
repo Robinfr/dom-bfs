@@ -22,7 +22,8 @@
     "scripts": {
         "test": "mocha -r ts-node/register src/**/*.spec.ts",
         "test:watch": "npm run test -- --watch --watch-extensions ts",
-        "precommit": "lint-staged"
+        "precommit": "lint-staged",
+        "build": "tsc"
     },
     "lint-staged": {
         "*.ts": ["prettier -c ./prettierrc", "tslint --fix", "git add"]
